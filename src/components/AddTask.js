@@ -1,6 +1,7 @@
-// GeneralTaskList.js
+// AddTask.js
 import React from 'react';
-import './AddTask';
+import './AddTask.css';
+
 
 const AddTask = () => {
   const tasks = [
@@ -19,11 +20,17 @@ const AddTask = () => {
   return (
     <div className="general-task-list">
       <h2>General Oppgaveliste</h2>
-      <ul>
-        {tasks.map((task) => (
-          <li key={task.id}>{task.name}</li>
-        ))}
-      </ul>
+      <button className="add-task-button">Legg til oppgave</button>
+      <button className="remove-task-button">Fjern oppgave</button>
+      <table>
+        <tbody>
+          {tasks.map((task) => (
+            <tr key={task.id}>
+              <td>{task.name}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };

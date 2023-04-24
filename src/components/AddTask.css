@@ -1,14 +1,54 @@
 .general-task-list {
-    margin: 20px;
-  }
-  
-  .general-task-list ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .general-task-list li {
-    font-size: 16px;
-    margin-bottom: 8px;
-  }
-  
+  margin: 20px;
+}
+
+.general-task-list h2 {
+  margin-bottom: 16px;
+}
+
+.add-task-button,
+.remove-task-button {
+  margin-top: 12%;
+  margin-right: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.remove-task-button {
+  background-color: #dc3545;
+}
+
+.add-task-button:hover,
+.remove-task-button:hover {
+  opacity: 0.8;
+}
+
+
+.general-task-list table {
+  margin-top: 10%;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.general-task-list td {
+  font-size: 16px;
+  padding: 8px;
+  padding-left: 16px; /* Add some margin to the left of the text */
+  text-align: left;
+  border-top: 1px solid #ccc; /* Add a line at the top of the table */
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.general-task-list tr:last-child td {
+  border-bottom: 1px solid #ccc; /* Add a line at the bottom of the table */
+}
+
